@@ -1,0 +1,215 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Header */
+
+.header {
+  background: #d7d5ff;
+  padding: 3.75rem 1.25rem;
+}
+
+.header-info h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.9375rem;
+  color: #2b2b2b;
+}
+
+.header-info p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #555;
+  margin-top: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.header-info button {
+  padding: 0.875rem 3.125rem;
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 0.3125rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.header img {
+  margin-top: 7.5rem;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    place-items: center center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .header-info h1 {
+    width: 349px;
+  }
+
+  .header-info p {
+    width: 389px;
+    font-size: 1.1875rem;
+  }
+
+  .header img {
+    margin-top: 0;
+  }
+}
+
+/* Cards */
+
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.875rem;
+  background: #f9f9f9;
+  padding: 3.75rem 1.25rem;
+}
+
+.box-card {
+  height: 423px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.box-color {
+  padding: 7rem;
+}
+
+.red {
+  background-color: #ff6363;
+}
+
+.blue-light {
+  background-color: #63ecff;
+}
+
+.pink {
+  background-color: #f363ff;
+}
+
+.green {
+  background-color: #63ff73;
+}
+
+.yellow {
+  background-color: #ffdd63;
+}
+
+.blue {
+  background-color: #6663ff;
+}
+
+.box-info {
+  background-color: #fff;
+  padding: 1.3125rem 2.0625rem 1.9375rem 1.9375rem;
+}
+
+.box-info h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #2b2b2b;
+  margin-bottom: 1.625rem;
+}
+
+.box-info p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: #555;
+}
+
+@media (min-width: 1280px) {
+  .container-card {
+    padding: 9.375rem 6.25rem;
+    gap: 6.875rem;
+  }
+}
+
+/* Contact */
+
+.contact {
+  width: 100%;
+  padding: 5rem 1.25rem 3.75rem 1.25rem;
+  background-color: #d7d5ff;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center center;
+}
+
+.contact-box {
+  display: grid;
+  gap: 2.25rem;
+  width: 100%;
+}
+
+.contact h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  color: #2b2b2b;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.form-input {
+  border: none;
+  padding: 1.25rem 0.75rem;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #2b2b2b;
+}
+
+.form-input::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #6e7275;
+}
+
+.form-button {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #6c63ff;
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  margin-top: 2.8125rem;
+}
+
+textarea.form-input {
+  resize: none;
+}
+
+@media (min-width: 1024px) {
+  .contact-box {
+    width: 470px;
+  }
+}
